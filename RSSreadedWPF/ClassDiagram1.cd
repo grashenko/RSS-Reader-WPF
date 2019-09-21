@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RSSreaderWPF.ImageOfChannel">
+    <Position X="13.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAQA=</HashCode>
+      <FileName>Channel\ImageOfChannel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RSSreaderWPF.RSSChannel">
+    <Position X="16.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAACAAIJAAACAAAAAAAAAAgAAAAAAAAAEA=</HashCode>
+      <FileName>Channel\RSSChannel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RSSItem" />
+      <Property Name="ImageOfChannel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RSSreaderWPF.RSSItem">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAQAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Channel\RSSItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RSSreaderWPF.FavoriteSite">
+    <Position X="9.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAIAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\FavoriteSite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RSSreaderWPF.UserModel">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAQACAAAAA=</HashCode>
+      <FileName>Models\UserModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RSSreaderWPF.ReaderContext">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAACAAAAAEAA=</HashCode>
+      <FileName>ReaderContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UserModel" />
+      <Property Name="FavoriteSite" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,36 @@
+﻿<Window x:Class="RSSreaderWPF.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialdesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
+        xmlns:local="clr-namespace:RSSreadedWPF"
+        mc:Ignorable="d"
+        Title="RegistrationWindow" Height="670" Background="{DynamicResource Color}" WindowStartupLocation="CenterScreen"  Width="1200" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--Button_Click-->
+        <TextBlock HorizontalAlignment="Center" FontFamily="Roboto" FontSize="86" Grid.ColumnSpan="3" FontStretch="Medium"  Margin="305,25,263.6,0" Grid.Row="1" TextWrapping="Wrap" Text="РЕГИСТРАЦИЯ" VerticalAlignment="Top" Height="102" Width="625" />
+
+        <TextBox Foreground="{DynamicResource FontColor}" Name="login" Panel.ZIndex="1" FontFamily="Roboto" FontSize="15" Background="{x:Null}" Grid.Row="1"  materialdesign:HintAssist.Hint="ЛОГИН" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  BorderBrush="Black"   HorizontalAlignment="Center" Height="70" Width="300" Margin="48.4,160,49.2,0"  VerticalAlignment="Top" Grid.Column="1" Grid.RowSpan="2"/>
+        <PasswordBox Foreground="{DynamicResource FontColor}" Name="password" Panel.ZIndex="1" FontFamily="Roboto" FontSize="15" Background="{x:Null}" Grid.Row="2" materialdesign:HintAssist.Hint="ПАРОЛЬ" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" BorderBrush="Black"  HorizontalAlignment="Center" Height="70" Width="300" Margin="48.4,72.8,49.2,0"   VerticalAlignment="Top" Grid.Column="1"/>
+        <materialdesign:PackIcon Kind="KeyboardReturn" MouseLeftButtonDown="Button_Click" Height="80" Width="105" Margin="10,10,0,0" Grid.Row="1" Cursor="Hand"/>
+        <Button Background="{DynamicResource Color}" Content="Регистрация" FontFamily="Roboto" FontSize="15" HorizontalAlignment="Left" Margin="117.4,64.4,0,0" VerticalAlignment="Top" Width="165" Click="Registration_Click" Grid.Column="1" Grid.Row="3"/>
+        <Canvas Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Background="Black">
+            <TextBlock Name="tb" TextWrapping="Wrap" FontFamily="Roboto" Margin="-25,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Text="TextBlock" Canvas.Left="600" Height="28"/>
+        </Canvas>
+        <Border Background="{DynamicResource Color}" BorderBrush="Black" materialdesign:ColorZoneAssist.Mode="Light" Grid.ColumnSpan="3" Width="420" BorderThickness="1"  HorizontalAlignment="Left" Height="230" Margin="383,160,0,0" Grid.Row="1" Grid.RowSpan="2" VerticalAlignment="Top"/>
+        <ToggleButton Background="{DynamicResource Color}" Margin="343.8,10,0,165.2" ToolTip="Светлая/Тёмная" RenderTransformOrigin="0.397,0.616" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" Width="45" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked"/>
+    </Grid>
+</Window>
